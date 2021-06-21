@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_materials
+name: Substrates types
+vid: substrate_type
+description: 'A list of substrates.'
+weight: 0

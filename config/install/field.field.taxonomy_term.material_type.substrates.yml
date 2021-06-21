@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.substrates
+    - taxonomy.vocabulary.substrates
+    - taxonomy.vocabulary.material_type
+  enforced:
+    module:
+      - farm_plant
+id: taxonomy_term.material_type.substrates
+field_name: substrates
+entity_type: taxonomy_term
+bundle: material_type
+label: 'Substrates'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      substrates: substrates
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

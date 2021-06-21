@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_materials
+name: Material types
+vid: material_type
+description: 'A list of materials.'
+weight: 0
