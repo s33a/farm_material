@@ -5,7 +5,7 @@ namespace Drupal\farm_materials\Plugin\Asset\AssetType;
 use Drupal\farm_entity\Plugin\Asset\AssetType\FarmAssetType;
 
 /**
- * Provides the compost asset type.
+ * Provides the materials asset type.
  *
  * @AssetType(
  *   id = "materials",
@@ -22,7 +22,7 @@ class Materials extends FarmAssetType {
     $field_info = [
       'material_type' => [
         'type' => 'entity_reference',
-        'label' => $this->t('Substrates'),
+        'label' => $this->t('Substrate'),
         'description' => "What Fungi species benefits from this substrate?",
         'target_type' => 'taxonomy_term',
         'target_bundle' => 'material_type',

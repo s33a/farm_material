@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.material_type.substrates
+    - field.field.taxonomy_term.material_type.substrate
     #- field.field.taxonomy_term.plant_type.crop_family
     #- field.field.taxonomy_term.plant_type.image
     #- field.field.taxonomy_term.plant_type.maturity_days
