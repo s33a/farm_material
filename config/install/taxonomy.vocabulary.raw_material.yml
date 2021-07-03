@@ -4,7 +4,7 @@ dependencies:
   enforced:
     module:
       - farm_materials
-name: Substrate type
-vid: substrate
-description: 'A list of substrates.'
+name: Raw material type
+vid: raw_material
+description: 'A list of raw materials.'
 weight: 0

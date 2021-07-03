@@ -17,7 +17,7 @@ class Materials extends FarmAssetType {
   /**
    * {@inheritdoc}
    */
-  public function buildFieldDefinitions() {
+  public function buildFieldDefinitions(): array {
     $fields = parent::buildFieldDefinitions();
     $field_info = [
       'material_type' => [
@@ -25,7 +25,7 @@ class Materials extends FarmAssetType {
         'label' => $this->t('Substrate'),
         'description' => "What Fungi species benefits from this substrate?",
         'target_type' => 'taxonomy_term',
-        'target_bundle' => 'material_type',
+        'target_bundle' => 'substrate',
         'auto_create' => TRUE,
         'required' => TRUE,
         'multiple' => TRUE,
