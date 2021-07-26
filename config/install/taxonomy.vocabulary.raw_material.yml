@@ -3,7 +3,7 @@ status: true
 dependencies:
   enforced:
     module:
-      - farm_materials
+      - farm_material
 name: Raw material type
 vid: raw_material
 description: 'A list of raw materials.'

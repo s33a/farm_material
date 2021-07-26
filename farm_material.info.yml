@@ -1,5 +1,5 @@
-name: Materials asset
-description: Adds a Materials asset type.
+name: Material asset
+description: Adds a Material asset type.
 type: module
 package: farmOS Custom
 core_version_requirement: ^9

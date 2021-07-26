@@ -3,8 +3,8 @@ status: true
 dependencies:
   enforced:
     module:
-      - farm_materials
+      - farm_material
 name: Supplement type
 vid: supplement
-description: 'A list of raw supplements.'
+description: 'A list of supplements.'
 weight: 0

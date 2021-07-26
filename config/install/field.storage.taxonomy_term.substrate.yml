@@ -3,7 +3,7 @@ status: true
 dependencies:
   enforced:
     module:
-      - farm_materials
+      - farm_material
   module:
     - taxonomy
 id: taxonomy_term.substrate

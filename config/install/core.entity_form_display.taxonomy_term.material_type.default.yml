@@ -9,7 +9,7 @@ dependencies:
     - taxonomy.vocabulary.material_type
   enforced:
     module:
-      - farm_materials
+      - farm_material
   module:
     - image
     - text

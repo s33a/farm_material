@@ -3,7 +3,7 @@ status: true
 dependencies:
   enforced:
     module:
-      - farm_materials
+      - farm_material
 name: Substrate type
 vid: substrate
 description: 'A list of substrates.'
