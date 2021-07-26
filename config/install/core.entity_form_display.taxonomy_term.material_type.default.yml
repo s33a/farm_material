@@ -3,15 +3,13 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.material_type.substrate
-    #- field.field.taxonomy_term.plant_type.crop_family
-    #- field.field.taxonomy_term.plant_type.image
-    #- field.field.taxonomy_term.plant_type.maturity_days
-    #- field.field.taxonomy_term.plant_type.transplant_days
+    - field.field.field.taxonomy_term.material_type.raw_material
+    - field.field.field.taxonomy_term.material_type.supplement
     - image.style.thumbnail
     - taxonomy.vocabulary.material_type
   enforced:
     module:
-      - farm_materials
+      - farm_material
   module:
     - image
     - text
@@ -20,9 +18,17 @@ targetEntityType: taxonomy_term
 bundle: material_type
 mode: default
 content:
-  companions:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: { }
+  substrate:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 1
     region: content
     settings:
       match_operator: CONTAINS
@@ -30,9 +36,19 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  crop_family:
+  raw_material:
     type: entity_reference_autocomplete
     weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  supplement:
+    type: entity_reference_autocomplete
+    weight: 3
     region: content
     settings:
       match_operator: CONTAINS
@@ -56,33 +72,11 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  maturity_days:
-    type: number
-    weight: 4
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-  name:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
     weight: 7
     region: content
-    third_party_settings: {  }
-  transplant_days:
-    type: number
-    weight: 3
-    region: content
-    settings:
-      placeholder: ''
     third_party_settings: {  }
 hidden: {  }

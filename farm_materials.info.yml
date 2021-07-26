@@ -1,7 +1,0 @@
-name: Materials asset
-description: Adds a Materials asset type.
-type: module
-package: farmOS Custom
-core_version_requirement: ^9
-dependencies:
-  - farm:farm_entity

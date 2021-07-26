@@ -3,8 +3,8 @@ status: true
 dependencies:
   enforced:
     module:
-      - farm_materials
-name: Material types
+      - farm_material
+name: Material type
 vid: material_type
-description: 'A list of materials.'
+description: 'A list of material.'
 weight: 0

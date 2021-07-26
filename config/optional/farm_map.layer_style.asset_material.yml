@@ -3,9 +3,9 @@ status: true
 dependencies:
   enforced:
     module:
-      - farm_materials
-id: asset_materials
-color: red
+      - farm_material
+id: asset_material
+color: yellow
 conditions:
   asset_type:
     - materials

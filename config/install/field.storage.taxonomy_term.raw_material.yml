@@ -6,8 +6,8 @@ dependencies:
       - farm_material
   module:
     - taxonomy
-id: taxonomy_term.substrate
-field_name: substrate
+id: taxonomy_term.raw_material
+field_name: raw_material
 entity_type: taxonomy_term
 type: entity_reference
 settings:
